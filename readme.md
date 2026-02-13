@@ -13,3 +13,9 @@ Ogni volta che volete usare un componente di Bootstrap fate sempre una prova su 
 Così facendo il codice CSS custom che scriverete risulterà abbastanza ridotto.
 
 Buon divertimento e confermate lettura come al solito :babyyoda:
+
+**SVOLGIMENTO**
+
+- PARTE 2 - card 1
+
+creazione card -> utilizziamo class (card) per replicare la forma -> utilizziamo (card-header) per il titolo della card -> all'interno inseriamo (ul) con class (list-group) con check integrato, inserendo p-3 (padding) per replicare la forma  
