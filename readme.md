@@ -16,6 +16,8 @@ Buon divertimento e confermate lettura come al solito :babyyoda:
 
 **SVOLGIMENTO**
 
-- PARTE 2 - card 1
+- PARTE 2 - card 
 
-creazione card -> utilizziamo class (card) per replicare la forma -> utilizziamo (card-header) per il titolo della card -> all'interno inseriamo (ul) con class (list-group) con check integrato, inserendo p-3 (padding) per replicare la forma  
+creazione **card 1** -> utilizziamo class (card) per replicare la forma -> utilizziamo (card-header) per il titolo della card -> all'interno inseriamo (ul) con class (list-group) con check integrato, inserendo p-3 (padding) per replicare il layout.  
+
+creazione **card 2** -> medesima costruzione di **card 1** ma, -> all'interno, invece di (ul) con class (list-group), inseriamo un (div) con class (accordion-flush) per replicare il layout.
