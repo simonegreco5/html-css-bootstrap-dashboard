@@ -4,9 +4,10 @@ tbody {
 
     .p {
         font-size: 14px;
+        /* width: 12rem; */
     }
 
-    .bi {
-        font-size: ;
+    .btn {
+        font-size: 12px;
     }
 }
