@@ -55,239 +55,246 @@
     </header>
 
     <main>
-        <div class="container-sm">
+        <div class="container-sm d-lg-flex">
 
             <!-- --- -- PARTE 1 -- --- -->
 
-            <!-- --- nome lista + bottone --- -->
-            <div class="d-flex justify-content-between pt-4 pb-4">
-                <div class="fs-4 fw-light"> Catalogo Libri</div>
-                <button type="button" class="btn btn-primary btn-sm fw-lighter">Aggiungi Libro</button>
+            <div>
+
+                <!-- --- nome lista + bottone --- -->
+                <div class="d-flex justify-content-between pt-4 pb-4">
+                    <div class="fs-4 fw-light"> Catalogo Libri</div>
+                    <button type="button" class="btn btn-primary btn-sm fw-lighter">Aggiungi Libro</button>
+                </div>
+    
+                <!--  --- lista libri + stato + bottoni --- -->
+                <table class="table table-striped">
+    
+                    <!-- titolo - stato - azioni -->
+                    <thead>
+                        <tr>
+                            <th scope="col">Titolo</th>
+                            <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
+                            <th scope="col">Stato</th>
+                            <th scope="col">Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                        <!-- libro 1 -->
+                        <tr>
+                            <td class="p">I pilastri della terra</td>
+                            <td class="p d-none d-md-table-cell">-</td>
+                            <td class="p"><span class="badge text-bg-success">Disponibile</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 2 -->
+                        <tr>
+                            <td class="p">I promessi sposi</td>
+                            <td class="p d-none d-md-table-cell">-</td>
+                            <td class="p"><span class="badge text-bg-success">Disponibile</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 3 -->
+                        <tr>
+                            <td class="p">Il signore degli anelli</td>
+                            <td class="p d-none d-md-table-cell fw-light">18/10/2023</td>
+                            <td class="p"><span class="badge text-bg-warning text-light">In prestito</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 4 -->
+                        <tr>
+                            <td class="p">Harry Potter e la pietra filosofale</td>
+                            <td class="p d-none d-md-table-cell">-</td>
+                            <td class="p"><span class="badge text-bg-success">Disponibile</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 5 -->
+                        <tr>
+                            <td class="p">Il codice da vinci</td>
+                            <td class="p d-none d-md-table-cell">-</td>
+                            <td class="p"><span class="badge text-bg-danger">Non disponibile</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 6 -->
+                        <tr>
+                            <td class="p">Shining</td>
+                            <td class="p d-none d-md-table-cell">-</td>
+                            <td class="p"><span class="badge text-bg-success">Disponibile</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 7 -->
+                        <tr>
+                            <td class="p">La divina commedia</td>
+                            <td class="p d-none d-md-table-cell fw-light">21/09/2023</td>
+                            <td class="p"><span class="badge text-bg-warning text-light">In prestito</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 8 -->
+                        <tr>
+                            <td class="p">Il trono di spade</td>
+                            <td class="p d-none d-md-table-cell">-</td>
+                            <td class="p"><span class="badge text-bg-success">Disponibile</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 9 -->
+                        <tr>
+                            <td class="p">Il mondo di Sofia</td>
+                            <td class="p d-none d-md-table-cell">-</td>
+                            <td class="p"><span class="badge text-bg-danger">Non disponibile</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 10 -->
+                        <tr>
+                            <td class="p">Le cronache di Narnia</td>
+                            <td class="p d-none d-md-table-cell fw-light">25/07/2023</td>
+                            <td class="p"><span class="badge text-bg-warning text-light">In prestito</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 11 -->
+                        <tr>
+                            <td class="p">Il piccolo principe</td>
+                            <td class="p d-none d-md-table-cell">-</td>
+                            <td class="p"><span class="badge text-bg-success">Disponibile</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                        <!-- libro 12 -->
+                        <tr>
+                            <td class="p">La storia infinita</td>
+                            <td class="p d-none d-md-table-cell">-</td>
+                            <td class="p"><span class="badge text-bg-success">Disponibile</span>
+                            <td>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+
             </div>
-
-            <!--  --- lista libri + stato + bottoni --- -->
-            <table class="table table-striped">
-
-                <!-- titolo - stato - azioni -->
-                <thead>
-                    <tr>
-                        <th scope="col">Titolo</th>
-                        <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
-                        <th scope="col">Stato</th>
-                        <th scope="col">Azioni</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <!-- libro 1 -->
-                    <tr>
-                        <td class="p">I pilastri della terra</td>
-                        <td class="p d-none d-md-table-cell">-</td>
-                        <td class="p"><span class="badge text-bg-success">Disponibile</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 2 -->
-                    <tr>
-                        <td class="p">I promessi sposi</td>
-                        <td class="p d-none d-md-table-cell">-</td>
-                        <td class="p"><span class="badge text-bg-success">Disponibile</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 3 -->
-                    <tr>
-                        <td class="p">Il signore degli anelli</td>
-                        <td class="p d-none d-md-table-cell fw-light">18/10/2023</td>
-                        <td class="p"><span class="badge text-bg-warning text-light">In prestito</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 4 -->
-                    <tr>
-                        <td class="p">Harry Potter e la pietra filosofale</td>
-                        <td class="p d-none d-md-table-cell">-</td>
-                        <td class="p"><span class="badge text-bg-success">Disponibile</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 5 -->
-                    <tr>
-                        <td class="p">Il codice da vinci</td>
-                        <td class="p d-none d-md-table-cell">-</td>
-                        <td class="p"><span class="badge text-bg-danger">Non disponibile</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 6 -->
-                    <tr>
-                        <td class="p">Shining</td>
-                        <td class="p d-none d-md-table-cell">-</td>
-                        <td class="p"><span class="badge text-bg-success">Disponibile</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 7 -->
-                    <tr>
-                        <td class="p">La divina commedia</td>
-                        <td class="p d-none d-md-table-cell fw-light">21/09/2023</td>
-                        <td class="p"><span class="badge text-bg-warning text-light">In prestito</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 8 -->
-                    <tr>
-                        <td class="p">Il trono di spade</td>
-                        <td class="p d-none d-md-table-cell">-</td>
-                        <td class="p"><span class="badge text-bg-success">Disponibile</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 9 -->
-                    <tr>
-                        <td class="p">Il mondo di Sofia</td>
-                        <td class="p d-none d-md-table-cell">-</td>
-                        <td class="p"><span class="badge text-bg-danger">Non disponibile</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 10 -->
-                    <tr>
-                        <td class="p">Le cronache di Narnia</td>
-                        <td class="p d-none d-md-table-cell fw-light">25/07/2023</td>
-                        <td class="p"><span class="badge text-bg-warning text-light">In prestito</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 11 -->
-                    <tr>
-                        <td class="p">Il piccolo principe</td>
-                        <td class="p d-none d-md-table-cell">-</td>
-                        <td class="p"><span class="badge text-bg-success">Disponibile</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                    <!-- libro 12 -->
-                    <tr>
-                        <td class="p">La storia infinita</td>
-                        <td class="p d-none d-md-table-cell">-</td>
-                        <td class="p"><span class="badge text-bg-success">Disponibile</span>
-                        <td>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-pencil-fill"></i></button>
-                            <button type="button" class="btn btn-outline-dark btn-sm"><i class="bi bi-trash-fill"></i></button>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-
 
             <!-- --- -- PARTE 2 -- --- -->   
              
-            <!-- -- Card 1 -- -->
-            <div class="card mt-4">
-                <div class="card-header fs-5">Todo</div>
+            <div>
 
-                <!-- check 1 -->
-                <ul class="list-group p-3">
-                   <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                      <label class="form-check-label fw-light" for="firstCheckbox">Chiamare segreteria</label>
-                   </li>
-
-                   <!-- check 2 -->
-                   <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                      <label class="form-check-label fw-light" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
-                   </li>
-
-                   <!-- check 3 -->
-                   <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                      <label class="form-check-label fw-light" for="thirdCheckbox">Ordinare nuovi libri</label>
-                   </li>
-                </ul>
+                <!-- -- Card 1 -- -->
+                <div class="card mt-4">
+                    <div class="card-header fs-5">Todo</div>
+    
+                    <!-- check 1 -->
+                    <ul class="list-group p-3">
+                       <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                          <label class="form-check-label fw-light" for="firstCheckbox">Chiamare segreteria</label>
+                       </li>
+    
+                       <!-- check 2 -->
+                       <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                          <label class="form-check-label fw-light" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
+                       </li>
+    
+                       <!-- check 3 -->
+                       <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                          <label class="form-check-label fw-light" for="thirdCheckbox">Ordinare nuovi libri</label>
+                       </li>
+                    </ul>
+    
+                </div>
+    
+                <!-- -- Card 2 -- -->
+                 <div class="card mt-4 mb-4">
+                    <div class="card-header fs-5">F.A.Q.</div>
+    
+                    <div class="accordion accordion-flush p-3" id="accordionFlushExample">
+    
+                        <!--  question 1 -->
+                       <div class="accordion-item">
+                         <h2 class="accordion-header">
+                           <button class="accordion-button collapsed fw-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                             Come aggiungere un nuovo libro?
+                           </button>
+                         </h2>
+                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+                         </div>
+                       </div>
+    
+                       <!-- question 2 -->
+                       <div class="accordion-item">
+                         <h2 class="accordion-header">
+                           <button class="accordion-button collapsed fw-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                             Come posso accedere all'anagrafica utenti?
+                           </button>
+                         </h2>
+                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+                         </div>
+                       </div>
+    
+                       <!-- question 3 -->
+                       <div class="accordion-item">
+                         <h2 class="accordion-header">
+                           <button class="accordion-button collapsed fw-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                             Posso usare questa dashboard da mobile?
+                           </button>
+                         </h2>
+                         <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                         </div>
+                       </div>
+    
+                    </div>
+    
+                 </div>
 
             </div>
-
-            <!-- -- Card 2 -- -->
-             <div class="card mt-4 mb-4">
-                <div class="card-header fs-5">F.A.Q.</div>
-
-                <div class="accordion accordion-flush p-3" id="accordionFlushExample">
-
-                    <!--  question 1 -->
-                   <div class="accordion-item">
-                     <h2 class="accordion-header">
-                       <button class="accordion-button collapsed fw-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                         Come aggiungere un nuovo libro?
-                       </button>
-                     </h2>
-                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
-                     </div>
-                   </div>
-
-                   <!-- question 2 -->
-                   <div class="accordion-item">
-                     <h2 class="accordion-header">
-                       <button class="accordion-button collapsed fw-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                         Come posso accedere all'anagrafica utenti?
-                       </button>
-                     </h2>
-                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
-                     </div>
-                   </div>
-
-                   <!-- question 3 -->
-                   <div class="accordion-item">
-                     <h2 class="accordion-header">
-                       <button class="accordion-button collapsed fw-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                         Posso usare questa dashboard da mobile?
-                       </button>
-                     </h2>
-                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                     </div>
-                   </div>
-
-                </div>
-
-             </div>
         
         </div>
     </main>
